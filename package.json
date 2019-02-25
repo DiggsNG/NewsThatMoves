@@ -1,0 +1,32 @@
+{
+  "name": "newsthatmoves",
+  "version": "1.0.0",
+  "description": "News Scrape Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiggsNG/NewsThatMoves.git"
+  },
+  "keywords": [
+    "diggskey"
+  ],
+  "author": "Nolen Diggs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiggsNG/NewsThatMoves/issues"
+  },
+  "homepage": "https://github.com/DiggsNG/NewsThatMoves#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.4.15",
+    "mongose": "0.0.2-security",
+    "morgan": "^1.9.1"
+  }
+}
