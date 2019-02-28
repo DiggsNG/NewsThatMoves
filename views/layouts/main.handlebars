@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/public/assets/css/style.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>New York Times Scraper</title>
+</head>
+
+<body>
+	<header>
+		<a href="/"><div id="sitename">NYT Scraper</div></a>
+		<a href="/"><button id="all-articles">All Articles</button></a>
+		<a href="/saved"><button id="saved-articles">Saved Articles</button></a>
+		<form action="/scrape" method="GET">
+			<button type="submit" id="refresh-articles">Scrape For Newest Articles</button>
+		</form>
+		<form action="/search" method="POST">
+			<button type="submit" id="search-submit">Submit</button>
+			<input type="text" name="search" placeholder="Search for articles" id="search-input">
+		</form>
+	</header>
+	<img id="cover" src="/assets/img/newsimage.jpg">
+	<div id="container">
+		{{{ body }}}
+	</div>
+	
+	<script src="/assets/javascript/app.js"></script>
+
+	<div id="addcomment">
+		<div id="comment-displayer">
+			<h2>comment</h2>
+			<h3>Article: <span id="article-title"></span></h3>
+			<div id="comment">
+				<label for="comment-title">Title</label><br>
+				<input type="text" placeholder="Title" name="title" id="comment-title"><br>
+				<label for="comment-body">comment</label><br>
+				<textarea rows="7" placeholder="comment" id="comment-body"></textarea><br>
+				<button type="submit" id="add-comment">Save comment</button>
+				<button type="button" id="close-comment">Cancel</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="/assets/javascript/app.js"></script>
+</body>
+</html>
