@@ -64,14 +64,14 @@ $(document).on("click", ".addComment", function (e) {
   var thisId = $(this).attr("data-id");
 
 
-  // Run a POST request to change the note, using what's entered in the inputs
+  // Run a POST request to change the comment, using what's entered in the inputs
   $.ajax({
     method: "POST",
     url: "/article/" + thisId,
     data: {
       // Value taken from title input
       author: currName.val(),
-      // Value taken from note textarea
+      // Value taken from comment textarea
       body: currCommentText.val()
     }
   })
@@ -81,7 +81,7 @@ $(document).on("click", ".addComment", function (e) {
         method: "GET",
         url: "/article/" + thisId
       })
-        // With that done, add the note information to the page
+        // With that done, add the comment information to the page
         .done(function (data) {
 
           if (data.comments) {
