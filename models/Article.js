@@ -15,11 +15,14 @@ var ArticleSchema = new Schema({
         type: String,
         required: true
     },
-    snipText:{
+    summary:{
         type: String
     },
-    imageLink:{
+    img:{
         type: String
+    },
+   issaved:{
+        type: Boolean,
     },
     comments:[{
         type: Schema.Types.ObjectId,
