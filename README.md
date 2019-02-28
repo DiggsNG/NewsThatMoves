@@ -6,4 +6,4 @@ Project using Mongo, Mongoose, Express, Express handlebars, Cheerio, Axio
    That stated, our site is actually a work in progress. At this time, we are only providing an image of the applications 
    front-end.
    
-   [News Feed One][
+   [News Feed One](https://github.com/DiggsNG/NewsThatMoves/blob/master/public/assets/img/NewsAppImage.PNG)
